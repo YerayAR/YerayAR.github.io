@@ -268,31 +268,70 @@ body.nav-open {
 }
 
 /* ------------------------------
-   3) Decorative background (Matrix)
+   3) Decorative background (light streak canvas)
    ------------------------------ */
-.matrix-rain {
+#canvas,
+#overlay,
+#bg_glow,
+#fps,
+#info {
   position: fixed;
-  top: 0;
-  height: 100%;
-  width: max(80px, calc((100vw - var(--container)) / 2));
-  pointer-events: none;
+}
+
+#canvas {
+  inset: 0;
   z-index: var(--z-bg);
-  overflow: hidden;
-  opacity: 0.14;
-  filter: blur(0.2px);
+  pointer-events: none;
+  opacity: 0.95;
 }
 
-.matrix-rain.left { left: 0; }
-.matrix-rain.right { right: 0; }
-
-.matrix-rain canvas {
-  width: 100%;
-  height: 100%;
+#bg_glow {
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Keep matrix on large screens only, and make it subtle */
-@media (max-width: 900px) {
-  .matrix-rain { display: none; }
+#overlay {
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 10%, rgba(3,8,18,0.42) 76%, rgba(3,8,18,0.62) 92%, rgba(3,8,18,0.72) 100%);
+}
+
+#info,
+#fps {
+  z-index: 3;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+
+#info {
+  top: 10px;
+  left: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(8, 15, 28, 0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+#fps {
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+}
+
+header,
+.intro-about-layout,
+.portfolio-highlight-links-section,
+.content-section,
+#ai-chat,
+#cv,
+footer {
+  position: relative;
+  z-index: 4;
 }
 
 /* ------------------------------
