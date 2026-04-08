@@ -86,7 +86,7 @@
   
   <!-- Stylesheets -->
   <!-- Cache-busting query param so GitHub Pages always sirve la última versión de style.css -->
-  <link rel="stylesheet" href="style.css?v=python-viz-1">
+  <link rel="stylesheet" href="style.css?v=portfolio-links-1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -105,7 +105,6 @@
   <script src="js/nav.js"></script>
   <script src="js/spotlight.js"></script>
   <script src="js/chat.js"></script>
-  <script src="js/python-viz.js"></script>
   <script src="js/stats.js"></script>
   <script src="js/matrix.js"></script>
   <script src="js/three.js"></script>
@@ -183,6 +182,34 @@
 
   </div>
 
+  <div class="portfolio-highlight-links-section">
+    <div class="portfolio-highlight-links">
+      <p class="portfolio-highlight-label" data-lang="portfolio-links-label">Portfolios especializados</p>
+      <div class="portfolio-highlight-grid">
+        <a class="portfolio-highlight-card" href="https://portfolio-analista-virid.vercel.app" target="_blank" rel="noopener">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-data-kicker">Analisis de datos</span>
+          <strong data-lang="portfolio-data-title">Portfolio de Analista</strong>
+          <span data-lang="portfolio-data-desc">Python, SQL, ETL, BI, forecasting y automatizacion.</span>
+        </a>
+        <a class="portfolio-highlight-card" href="https://services-bancaires-en-ligne-sgbge.vercel.app/" target="_blank" rel="noopener">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-bank-kicker">Fintech PWA</span>
+          <strong data-lang="portfolio-bank-title">MVP PWA Banca Digital</strong>
+          <span data-lang="portfolio-bank-desc">Propuesta funcional de banca online en formato PWA con cuentas, tarjetas, transferencias y servicios financieros.</span>
+        </a>
+        <a class="portfolio-highlight-card" href="https://portfolio-backend-phi-khaki.vercel.app" target="_blank" rel="noopener">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-django-kicker">Python + Django</span>
+          <strong data-lang="portfolio-django-title">Portfolio Backend</strong>
+          <span data-lang="portfolio-django-desc">Case studies de datos, APIs JSON y arquitectura backend lista para crecer.</span>
+        </a>
+        <a class="portfolio-highlight-card" href="https://portfolio-site-alpha-tawny.vercel.app" target="_blank" rel="noopener">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-wp-kicker">WordPress</span>
+          <strong data-lang="portfolio-wp-title">Portfolio WordPress</strong>
+          <span data-lang="portfolio-wp-desc">Storefront de ecommerce, producto, carrito y checkout.</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
   {% include sections/experience.html %}
 
 
@@ -210,12 +237,6 @@
 
 
   {% include sections/cv.html %}
-
-
-  {% include sections/python-viz.html %}
-
-
-  
 
   {% include footer.html %}
 
