@@ -10,6 +10,7 @@
     if (typeof window.initThreeJS === 'function') window.initThreeJS();
     if (typeof window.initMatrixRain === 'function') window.initMatrixRain();
     if (typeof window.initLanguageToggle === 'function') window.initLanguageToggle();
+    if (typeof window.initFullstackDemo === 'function') window.initFullstackDemo();
     if (typeof window.initChat === 'function') window.initChat();
     if (typeof window.initPythonViz === 'function') window.initPythonViz();
     if (typeof window.initStatsCountUp === 'function') window.initStatsCountUp();

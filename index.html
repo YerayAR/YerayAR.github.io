@@ -72,7 +72,7 @@
   <meta name="application-name" content="Yeray Portfolio">
   <meta name="apple-mobile-web-app-title" content="Yeray AR">
   
-  <title>Yeray Alonso Reyes | Ingeniero Informático & Desarrollador Python</title>
+  <title>Yeray Alonso Reyes | Frontend Developer & Full Stack Builder</title>
 
   <link rel="icon" type="image/png" href="features/logo.png">
   <link rel="apple-touch-icon" sizes="192x192" href="features/logo.png">
@@ -86,7 +86,7 @@
   
   <!-- Stylesheets -->
   <!-- Cache-busting query param so GitHub Pages always sirve la última versión de style.css -->
-  <link rel="stylesheet" href="style.css?v=portfolio-links-1">
+  <link rel="stylesheet" href="style.css?v=fullstack-frontend-2">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -95,7 +95,6 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
   <script src="translations.js"></script>
   <script src="qa.js"></script>
   <script src="js/language.js"></script>
@@ -106,6 +105,7 @@
   <script src="js/spotlight.js"></script>
   <script src="js/chat.js"></script>
   <script src="js/stats.js"></script>
+  <script src="js/fullstack-demo.js"></script>
   <script src="js/matrix.js"></script>
   <script src="js/three.js"></script>
   <script src="js/visit.js"></script>
@@ -196,11 +196,68 @@
           <strong data-lang="portfolio-bank-title">MVP PWA Banca Digital</strong>
           <span data-lang="portfolio-bank-desc">Propuesta funcional de banca online en formato PWA con cuentas, tarjetas, transferencias y servicios financieros.</span>
         </a>
-        <a class="portfolio-highlight-card" href="https://portfolio-backend-phi-khaki.vercel.app" target="_blank" rel="noopener">
-          <span class="portfolio-highlight-kicker" data-lang="portfolio-django-kicker">Python + Django</span>
-          <strong data-lang="portfolio-django-title">Portfolio Backend</strong>
-          <span data-lang="portfolio-django-desc">Case studies de datos, APIs JSON y arquitectura backend lista para crecer.</span>
-        </a>
+        <article class="portfolio-highlight-card portfolio-highlight-card--fullstack">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-django-kicker">Full Stack en Vercel</span>
+          <strong data-lang="portfolio-django-title">Suite Full Stack</strong>
+          <span data-lang="portfolio-django-desc">Frontend publico por separado, panel administrativo privado y API JSON en un dominio independiente.</span>
+          <div class="portfolio-highlight-hoverpanel" aria-hidden="true">
+            <p class="portfolio-highlight-hoverpanel-title" data-lang="fullstack-kicker">Arquitectura desacoplada</p>
+            <p class="portfolio-highlight-hoverpanel-intro" data-lang="fullstack-desc">La propuesta combina una experiencia frontend mas cuidada y visual con una capa operativa separada para gestion de contenido, autenticacion y consumo de datos. Asi el portfolio principal se presenta como portfolio de frontend, mientras la otra aplicacion demuestra criterio full stack real.</p>
+            <div class="fullstack-demo-tabs" role="tablist" aria-label="Full stack demo tabs">
+              <button class="fullstack-demo-tab is-active" type="button" data-fullstack-tab="frontend" data-lang="fullstack-tab-frontend">Frontend</button>
+              <button class="fullstack-demo-tab" type="button" data-fullstack-tab="admin" data-lang="fullstack-tab-admin">Admin</button>
+              <button class="fullstack-demo-tab" type="button" data-fullstack-tab="api" data-lang="fullstack-tab-api">API</button>
+            </div>
+            <div class="fullstack-demo-panels">
+              <section class="fullstack-demo-panel is-active" data-fullstack-panel="frontend">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-frontend-kicker">Frontend publico</span>
+                    <strong data-lang="fullstack-node-frontend-title">Landing y portfolio orientados a conversion</strong>
+                    <span data-lang="fullstack-node-frontend-desc">Interfaz, animaciones, performance, SEO tecnico y consumo de endpoints remotos desde un dominio independiente.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-frontend-metric-title">Lighthouse, CTA y contenido dinamico</strong>
+                    <p data-lang="fullstack-frontend-metric-desc">Hero, cards de proyectos, animaciones y datos remotos pensados para captar atencion y convertir visitas en contactos.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="fullstack-demo-panel" data-fullstack-panel="admin">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-admin-kicker">Admin + API</span>
+                    <strong data-lang="fullstack-node-admin-title">Panel privado y backend operativo</strong>
+                    <span data-lang="fullstack-node-admin-desc">Gestion de proyectos, contenido, mensajes y recursos desde un panel privado con API lista para integraciones.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-admin-metric-title">CRUD, autenticacion y panel de control</strong>
+                    <p data-lang="fullstack-admin-metric-desc">Edicion de proyectos, gestion de mensajes y publicacion de cambios sin tocar el frontend publico.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="fullstack-demo-panel" data-fullstack-panel="api">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-flow-kicker">Despliegue</span>
+                    <strong data-lang="fullstack-node-flow-title">Dos apps, dos dominios, una experiencia coherente</strong>
+                    <span data-lang="fullstack-node-flow-desc">Separacion clara entre capa publica y capa interna para escalar, proteger accesos y evolucionar frontend y backend sin friccion.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-api-metric-title">Endpoints, tokens y consumo desacoplado</strong>
+                    <p data-lang="fullstack-api-metric-desc">El frontend consulta contenido publicado, estadisticas y recursos desde una API aislada lista para nuevas integraciones.</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="fullstack-demo-footer">
+              <span class="fullstack-demo-badge" data-lang="fullstack-badge">Demo interactiva</span>
+              <a class="fullstack-demo-link" href="https://portfolio-backend-phi-khaki.vercel.app" target="_blank" rel="noopener" data-lang="fullstack-open-link">Abrir proyecto</a>
+            </div>
+          </div>
+        </article>
         <a class="portfolio-highlight-card" href="https://portfolio-site-alpha-tawny.vercel.app" target="_blank" rel="noopener">
           <span class="portfolio-highlight-kicker" data-lang="portfolio-wp-kicker">WordPress</span>
           <strong data-lang="portfolio-wp-title">Portfolio WordPress</strong>

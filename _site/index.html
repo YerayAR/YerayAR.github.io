@@ -70,7 +70,7 @@
   <meta name="application-name" content="Yeray Portfolio">
   <meta name="apple-mobile-web-app-title" content="Yeray AR">
   
-  <title>Yeray Alonso Reyes | Ingeniero Informático & Desarrollador Python</title>
+  <title>Yeray Alonso Reyes | Frontend Developer & Full Stack Builder</title>
 
   <link rel="icon" type="image/png" href="features/logo.png">
   <link rel="apple-touch-icon" sizes="192x192" href="features/logo.png">
@@ -84,7 +84,7 @@
   
   <!-- Stylesheets -->
   <!-- Cache-busting query param so GitHub Pages always sirve la última versión de style.css -->
-  <link rel="stylesheet" href="style.css?v=portfolio-links-1">
+  <link rel="stylesheet" href="style.css?v=fullstack-frontend-2">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
@@ -93,7 +93,6 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
   <script src="translations.js"></script>
   <script src="qa.js"></script>
   <script src="js/language.js"></script>
@@ -104,6 +103,7 @@
   <script src="js/spotlight.js"></script>
   <script src="js/chat.js"></script>
   <script src="js/stats.js"></script>
+  <script src="js/fullstack-demo.js"></script>
   <script src="js/matrix.js"></script>
   <script src="js/three.js"></script>
   <script src="js/visit.js"></script>
@@ -233,10 +233,11 @@
             </div>
           </div>
           <p class="intro-name animate__animated animate__fadeInLeft animate__delay-1s">Yeray AR</p>
-          <p class="intro-description" data-lang="intro-description">Me dedico a automatizar procesos con Python y al desarrollo web.</p>
+          <p class="intro-description" data-lang="intro-description">Diseno experiencias frontend modernas y las conecto con APIs, automatizaciones y paneles administrativos reales.</p>
         </div>
       </div>
     </section>
+
 
 
     <!-- ====================================
@@ -249,11 +250,12 @@
       <div class="section-content">
       <h2 data-lang="about-title">Sobre Mí</h2>
       <p data-lang="about-p1">¡Hola! Soy Yeray Alonso Reyes, un Ingeniero Informático apasionado por la tecnología y la programación. He finalizado mi grado en Ingeniería Informática en la Universitat Oberta de Catalunya (UOC), donde me especialicé en el desarrollo de aplicaciones web y móviles. Durante mi formación trabajé con diversas tecnologías como HTML, CSS, JavaScript, React, Python y Docker.</p>
-      <p data-lang="about-p2">Actualmente me desarrollo profesionalmente en las áreas de automatización con Python con frameworks como Django y librerías como Pandas y NumPy, desarrollo web y análisis de datos, aplicando mis conocimientos para crear soluciones eficientes y basadas en datos.</p>
+      <p data-lang="about-p2">Actualmente me desarrollo profesionalmente creando interfaces cuidadas, frontends desacoplados y soluciones full stack donde el frontend publico convive con APIs y paneles administrativos desplegados por separado.</p>
       <p data-lang="about-p3">Me considero una persona adaptable y con gran capacidad de aprendizaje. He aprendido rápidamente a manejar nuevas tecnologías y frameworks, aplicando metodologías ágiles (Scrum, Kanban) en proyectos colaborativos. Gran parte de mi experiencia proviene de proyectos personales y académicos que me han permitido mejorar en trabajo en equipo, resolución de problemas y gestión de proyectos.</p>
       <p data-lang="about-p4">Estoy entusiasmado por seguir creciendo como desarrollador y contribuir a proyectos innovadores que generen un impacto positivo. Busco activamente oportunidades para aplicar mis habilidades en entornos profesionales. ¡No dudes en contactarme si deseas saber más o colaborar en algún proyecto!</p>
       </div>
     </section>
+
 
   </div>
 
@@ -271,11 +273,68 @@
           <strong data-lang="portfolio-bank-title">MVP PWA Banca Digital</strong>
           <span data-lang="portfolio-bank-desc">Propuesta funcional de banca online en formato PWA con cuentas, tarjetas, transferencias y servicios financieros.</span>
         </a>
-        <a class="portfolio-highlight-card" href="https://portfolio-backend-phi-khaki.vercel.app" target="_blank" rel="noopener">
-          <span class="portfolio-highlight-kicker" data-lang="portfolio-django-kicker">Python + Django</span>
-          <strong data-lang="portfolio-django-title">Portfolio Backend</strong>
-          <span data-lang="portfolio-django-desc">Case studies de datos, APIs JSON y arquitectura backend lista para crecer.</span>
-        </a>
+        <article class="portfolio-highlight-card portfolio-highlight-card--fullstack">
+          <span class="portfolio-highlight-kicker" data-lang="portfolio-django-kicker">Full Stack en Vercel</span>
+          <strong data-lang="portfolio-django-title">Suite Full Stack</strong>
+          <span data-lang="portfolio-django-desc">Frontend publico por separado, panel administrativo privado y API JSON en un dominio independiente.</span>
+          <div class="portfolio-highlight-hoverpanel" aria-hidden="true">
+            <p class="portfolio-highlight-hoverpanel-title" data-lang="fullstack-kicker">Arquitectura desacoplada</p>
+            <p class="portfolio-highlight-hoverpanel-intro" data-lang="fullstack-desc">La propuesta combina una experiencia frontend mas cuidada y visual con una capa operativa separada para gestion de contenido, autenticacion y consumo de datos. Asi el portfolio principal se presenta como portfolio de frontend, mientras la otra aplicacion demuestra criterio full stack real.</p>
+            <div class="fullstack-demo-tabs" role="tablist" aria-label="Full stack demo tabs">
+              <button class="fullstack-demo-tab is-active" type="button" data-fullstack-tab="frontend" data-lang="fullstack-tab-frontend">Frontend</button>
+              <button class="fullstack-demo-tab" type="button" data-fullstack-tab="admin" data-lang="fullstack-tab-admin">Admin</button>
+              <button class="fullstack-demo-tab" type="button" data-fullstack-tab="api" data-lang="fullstack-tab-api">API</button>
+            </div>
+            <div class="fullstack-demo-panels">
+              <section class="fullstack-demo-panel is-active" data-fullstack-panel="frontend">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-frontend-kicker">Frontend publico</span>
+                    <strong data-lang="fullstack-node-frontend-title">Landing y portfolio orientados a conversion</strong>
+                    <span data-lang="fullstack-node-frontend-desc">Interfaz, animaciones, performance, SEO tecnico y consumo de endpoints remotos desde un dominio independiente.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-frontend-metric-title">Lighthouse, CTA y contenido dinamico</strong>
+                    <p data-lang="fullstack-frontend-metric-desc">Hero, cards de proyectos, animaciones y datos remotos pensados para captar atencion y convertir visitas en contactos.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="fullstack-demo-panel" data-fullstack-panel="admin">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-admin-kicker">Admin + API</span>
+                    <strong data-lang="fullstack-node-admin-title">Panel privado y backend operativo</strong>
+                    <span data-lang="fullstack-node-admin-desc">Gestion de proyectos, contenido, mensajes y recursos desde un panel privado con API lista para integraciones.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-admin-metric-title">CRUD, autenticacion y panel de control</strong>
+                    <p data-lang="fullstack-admin-metric-desc">Edicion de proyectos, gestion de mensajes y publicacion de cambios sin tocar el frontend publico.</p>
+                  </div>
+                </div>
+              </section>
+              <section class="fullstack-demo-panel" data-fullstack-panel="api">
+                <div class="portfolio-highlight-hoverpanel-grid">
+                  <div class="portfolio-highlight-hoveritem">
+                    <span class="portfolio-highlight-hoveritem-kicker" data-lang="fullstack-node-flow-kicker">Despliegue</span>
+                    <strong data-lang="fullstack-node-flow-title">Dos apps, dos dominios, una experiencia coherente</strong>
+                    <span data-lang="fullstack-node-flow-desc">Separacion clara entre capa publica y capa interna para escalar, proteger accesos y evolucionar frontend y backend sin friccion.</span>
+                  </div>
+                  <div class="fullstack-demo-console">
+                    <span class="fullstack-demo-console-label" data-lang="fullstack-console-label">Estado visible</span>
+                    <strong data-lang="fullstack-api-metric-title">Endpoints, tokens y consumo desacoplado</strong>
+                    <p data-lang="fullstack-api-metric-desc">El frontend consulta contenido publicado, estadisticas y recursos desde una API aislada lista para nuevas integraciones.</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="fullstack-demo-footer">
+              <span class="fullstack-demo-badge" data-lang="fullstack-badge">Demo interactiva</span>
+              <a class="fullstack-demo-link" href="https://portfolio-backend-phi-khaki.vercel.app" target="_blank" rel="noopener" data-lang="fullstack-open-link">Abrir proyecto</a>
+            </div>
+          </div>
+        </article>
         <a class="portfolio-highlight-card" href="https://portfolio-site-alpha-tawny.vercel.app" target="_blank" rel="noopener">
           <span class="portfolio-highlight-kicker" data-lang="portfolio-wp-kicker">WordPress</span>
           <strong data-lang="portfolio-wp-title">Portfolio WordPress</strong>
@@ -343,12 +402,12 @@
       <p data-lang="serv1-desc">Desarrollo de scripts y herramientas para automatizar procesos repetitivos y optimizar flujos de trabajo, ahorrando tiempo y reduciendo errores.</p>
     </div>
     <div class="service-item">
-      <h3 data-lang="serv2-title">Páginas Web para Comercios</h3>
-      <p data-lang="serv2-desc">Desarrollo de sitios web estáticos modernos y responsivos para pequeños comercios y negocios locales, optimizados para mostrar productos y servicios de forma profesional.</p>
+      <h3 data-lang="serv2-title">Frontends para Negocio</h3>
+      <p data-lang="serv2-desc">Desarrollo de sitios web modernos y responsivos centrados en experiencia de usuario, rendimiento, conversion y consumo de datos desde APIs externas o propias.</p>
     </div>
     <div class="service-item">
-      <h3 data-lang="serv3-title">Portfolios Personales</h3>
-      <p data-lang="serv3-desc">Creación de portfolios personalizados para profesionales y creativos que buscan mostrar su trabajo de forma atractiva y profesional en línea.</p>
+      <h3 data-lang="serv3-title">Portfolios y Landings</h3>
+      <p data-lang="serv3-desc">Creación de portfolios y landings personalizados para profesionales, marcas y servicios que necesitan una presencia visual solida y facil de mantener.</p>
     </div>
     <div class="service-item">
       <h3 data-lang="serv4-title">Clases de Programación</h3>
@@ -364,6 +423,7 @@
     </div>
     </div>
   </section>
+
 
 
 
@@ -383,8 +443,8 @@
       <p data-lang="proj3-desc">Implementación de un formulario personalizado en WordPress utilizando plugins como Contact Form 7. El formulario permite recopilar información específica de usuarios y enviar notificaciones automáticas, mejorando la eficiencia en la gestión de solicitudes. Además, creación de un sitio web corporativo moderno y responsivo en WordPress.</p>
     </div>
     <div class="project">
-      <h3 data-lang="proj4-title">Marketplace (Flutter + Django) - Desarrollo Full Stack</h3>
-      <p data-lang="proj4-desc">Participación en la elaboración de un marketplace para una aplicación móvil en Flutter, con backend en Django, contribuyendo tanto a la capa de interfaz como a endpoints y lógica del servidor.</p>
+      <h3 data-lang="proj4-title">Plataforma Full Stack Desacoplada</h3>
+      <p data-lang="proj4-desc">Conceptualizacion y desarrollo de una solucion full stack con frontend publico independiente, panel administrativo privado y API desacoplada para escalar contenido, gestion y experiencia de usuario por separado.</p>
     </div>
     <div class="academic-projects">
       <h3 data-lang="academic-proj-title">Proyectos Académicos</h3>
@@ -401,6 +461,7 @@
     </div>
     </div>
   </section>
+
 
 
 
@@ -429,12 +490,26 @@
     <div class="section-content">
     <h2 data-lang="contact-title">Contacto</h2>
     <div class="contact-layout">
-      <div class="contact-illustration" aria-hidden="true">
-        <dotlottie-wc
-          src="https://lottie.host/c6c5afde-ac0b-44a2-95ce-117dd900ca03/XCMpw7K2vj.lottie"
-          autoplay
-          loop
-        ></dotlottie-wc>
+      <div class="contact-illustration contact-illustration--local" aria-hidden="true">
+        <span class="contact-orbit contact-orbit--one"></span>
+        <span class="contact-orbit contact-orbit--two"></span>
+        <div class="contact-mail-card">
+          <div class="contact-mail-card__header">
+            <span class="contact-mail-card__avatar"></span>
+            <span class="contact-mail-card__badge"></span>
+          </div>
+          <div class="contact-mail-card__body">
+            <span class="contact-mail-card__line contact-mail-card__line--lg"></span>
+            <span class="contact-mail-card__line"></span>
+            <span class="contact-mail-card__line contact-mail-card__line--sm"></span>
+          </div>
+          <div class="contact-mail-card__envelope">
+            <span class="contact-mail-card__flap"></span>
+            <span class="contact-mail-card__letter"></span>
+          </div>
+        </div>
+        <span class="contact-signal contact-signal--one"></span>
+        <span class="contact-signal contact-signal--two"></span>
       </div>
       <form id="contactForm">
         <div class="hp-field">
@@ -455,6 +530,7 @@
     </div>
     </div>
   </section>
+
 
 
 <section id="ai-chat" class="content-section">
@@ -516,12 +592,29 @@
         </div>
         </div>
       </div>
-      <div class="animation-3d-wrapper">
-        <dotlottie-wc
-          src="https://lottie.host/166de4aa-f78b-4122-aa90-ef85165636ac/AAjZts6KeG.lottie"
-          autoplay
-          loop
-        ></dotlottie-wc>
+      <div class="animation-3d-wrapper animation-3d-wrapper--local" aria-hidden="true">
+        <div class="cv-motion-scene">
+          <span class="cv-glow cv-glow--one"></span>
+          <span class="cv-glow cv-glow--two"></span>
+          <div class="cv-sheet cv-sheet--back"></div>
+          <div class="cv-sheet cv-sheet--mid"></div>
+          <div class="cv-sheet cv-sheet--front">
+            <span class="cv-sheet__tag"></span>
+            <span class="cv-sheet__line cv-sheet__line--lg"></span>
+            <span class="cv-sheet__line"></span>
+            <span class="cv-sheet__line cv-sheet__line--sm"></span>
+            <div class="cv-sheet__footer">
+              <span class="cv-download-circle">
+                <svg class="cv-download-circle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 4v10"></path>
+                  <path d="m7 11 5 5 5-5"></path>
+                  <path d="M5 19h14"></path>
+                </svg>
+              </span>
+              <span class="cv-sheet__pill"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </div>
